@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Internet permission - Firebase ke liye zaroori -->
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <!-- Storage permission - PDF save karne ke liye -->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"
+        android:maxSdkVersion="28"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Railway App"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.RailwayManagementSystem"
+        android:usesCleartextTraffic="true">
+
+        <!-- SplashActivity - pehli screen jo khulegi -->
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.RailwayManagementSystem">
+            <intent-filter>
+                <!-- MAIN + LAUNCHER = app icon click karne pe ye khulegi -->
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+        <!-- LoginActivity -->
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"/>
+
+        <!-- RegisterActivity -->
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"/>
+
+        <!-- HomeActivity -->
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false"/>
+
+        <!-- TrainListActivity -->
+        <activity
+            android:name=".TrainListActivity"
+            android:exported="false"/>
+
+        <!-- ClassSelectionActivity -->
+        <activity
+            android:name=".ClassSelectionActivity"
+            android:exported="false"/>
+
+        <!-- SeatSelectionActivity -->
+        <activity
+            android:name=".SeatSelectionActivity"
+            android:exported="false"/>
+
+        <!-- BookingConfirmActivity -->
+        <activity
+            android:name=".BookingConfirmActivity"
+            android:exported="false"/>
+
+        <!-- TicketActivity -->
+        <activity
+            android:name=".TicketActivity"
+            android:exported="false"/>
+
+        <!-- MyBookingsActivity -->
+        <activity
+            android:name=".MyBookingsActivity"
+            android:exported="false"/>
+
+        <!-- MainActivity - ye default thi, ab use nahi karenge -->
+        <activity
+            android:name=".MainActivity"
+            android:exported="false"/>
+
+    </application>
+</manifest>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "528433863018",
+    "project_id": "railway-management-syste-5f1fc",
+    "storage_bucket": "railway-management-syste-5f1fc.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:528433863018:android:8450e19ed8b3e16e9a6d13",
+        "android_client_info": {
+          "package_name": "com.superior.railwayapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9fnDfVow7zo8GtU1Fz_oJ2U8zbLvtNd4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

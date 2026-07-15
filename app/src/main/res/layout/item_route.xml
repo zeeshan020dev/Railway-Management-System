@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- har route ka ek card - GridLayout mein dikhega -->
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardRoute"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardBackgroundColor="#1e2d3d"
+    app:cardElevation="6dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center">
+
+        <!-- Route Icon -->
+        <TextView
+            android:id="@+id/tvRouteIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🚆"
+            android:textSize="40sp"
+            android:layout_marginBottom="8dp"/>
+
+        <!-- From City -->
+        <TextView
+            android:id="@+id/tvFromCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lahore"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <!-- Arrow -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="↓"
+            android:textColor="#90caf9"
+            android:textSize="16sp"
+            android:layout_marginTop="2dp"
+            android:layout_marginBottom="2dp"/>
+
+        <!-- To City -->
+        <TextView
+            android:id="@+id/tvToCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Karachi"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold"/>
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#263545"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Duration -->
+        <TextView
+            android:id="@+id/tvDuration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="12 hrs"
+            android:textColor="#90caf9"
+            android:textSize="12sp"/>
+
+        <!-- Train Count -->
+        <TextView
+            android:id="@+id/tvTrainCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5 Trains"
+            android:textColor="#4caf50"
+            android:textSize="12sp"
+            android:layout_marginTop="4dp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

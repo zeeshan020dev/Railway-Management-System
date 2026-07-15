@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0d1b2a">
+
+    <!-- Header -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#1e2d3d"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/tvBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="← "
+            android:textColor="#90caf9"
+            android:textSize="22sp"
+            android:layout_marginEnd="8dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Select Seats"
+                android:textColor="#90caf9"
+                android:textSize="12sp"/>
+
+            <TextView
+                android:id="@+id/tvRouteInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lahore → Karachi"
+                android:textColor="#ffffff"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- Train + Class Info -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1b5e20"
+        android:padding="10dp"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginStart="8dp">
+
+            <TextView
+                android:id="@+id/tvTrainInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Karachi Express | #101"
+                android:textColor="#ffffff"
+                android:textSize="14sp"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:id="@+id/tvClassInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Economy Class"
+                android:textColor="#a5d6a7"
+                android:textSize="12sp"/>
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvFareInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rs. 1500 / seat"
+            android:textColor="#ffffff"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_marginEnd="12dp"/>
+
+    </LinearLayout>
+
+    <!-- Seat Legend -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:gravity="center">
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#1b5e20"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Available  "
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#1565c0"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Selected  "
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+
+        <View
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="#c62828"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Booked"
+            android:textColor="#ffffff"
+            android:textSize="12sp"/>
+
+    </LinearLayout>
+
+    <!-- Seats Grid -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:padding="8dp">
+
+        <GridLayout
+            android:id="@+id/gridSeats"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            android:padding="8dp"/>
+
+    </ScrollView>
+
+    <!-- Selected Seats Info -->
+    <TextView
+        android:id="@+id/tvSelectedSeats"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="No seats selected"
+        android:textColor="#90caf9"
+        android:textSize="13sp"
+        android:padding="12dp"
+        android:background="#1e2d3d"/>
+
+    <!-- Proceed Button -->
+    <Button
+        android:id="@+id/btnProceed"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:text="PROCEED TO BOOKING"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:backgroundTint="#1565c0"/>
+
+</LinearLayout>
