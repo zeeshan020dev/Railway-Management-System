@@ -4,7 +4,6 @@
 [![Kotlin](https://img.shields.io/badge/Gradle%20Kotlin-DSL-7F52FF?logo=kotlin&logoColor=white)](https://kotlinlang.org/)
 [![Firebase](https://img.shields.io/badge/Firebase-Backend%20Ready-FFCA28?logo=firebase&logoColor=black)](https://firebase.google.com/)
 [![Java](https://img.shields.io/badge/Java-11-007396?logo=openjdk&logoColor=white)](https://www.oracle.com/java/)
-[![License](https://img.shields.io/badge/License-MIT-informational)](#license)
 
 Modern Android railway booking app for browsing trains, selecting seats, confirming reservations, and generating tickets.
 
